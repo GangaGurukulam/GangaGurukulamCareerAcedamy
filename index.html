@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Independence Day - Ganga Gurukulam Career Academy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@400;600;700&family=Teko:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+        
+        /* Updated welcome-heading for premium look */
+        .welcome-heading {
+            font-family: 'Cinzel', serif; /* New elegant font */
+            font-weight: 700;
+            /* Tricolor gradient text effect */
+            background: linear-gradient(90deg, #FF9933, #FFFFFF, #138808);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* Enhanced shadow for better visibility */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* New class for premium academy name */
+        .academy-name {
+            font-family: 'Teko', sans-serif;
+            font-weight: 700;
+            color: #FFD700; /* Gold color */
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+            letter-spacing: 0.05em; /* Adjusted letter spacing */
+        }
+
+        .icon-container a {
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .icon-container a:hover {
+            transform: translateY(-10px) scale(1.1);
+        }
+        .social-link {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header styles */
+        .header {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 50;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+        .header-title {
+            font-family: 'Teko', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #1a202c;
+        }
+
+        /* Footer styles */
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 50;
+        }
+        
+        /* Ashoka Chakra styles */
+        .ashoka-chakra-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30vh;
+            height: 30vh;
+            min-width: 200px;
+            min-height: 200px;
+            max-width: 300px;
+            max-height: 300px;
+            opacity: 0.15;
+            z-index: 1;
+            animation: spin 60s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Ashoka Chakra in Background -->
+    <svg class="ashoka-chakra-bg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" fill="none" stroke="#000080" stroke-width="2"/>
+        <circle cx="50" cy="50" r="8" fill="#000080"/>
+        <g stroke="#000080" stroke-width="2">
+            <!-- 24 spokes -->
+            <path d="M50 50 L50 2"/> <path d="M50 50 L73.9 10.2"/> <path d="M50 50 L90.8 26.1"/> <path d="M50 50 L98 50"/> <path d="M50 50 L90.8 73.9"/> <path d="M50 50 L73.9 90.8"/> <path d="M50 50 L50 98"/> <path d="M50 50 L26.1 90.8"/> <path d="M50 50 L9.2 73.9"/> <path d="M50 50 L2 50"/> <path d="M50 50 L9.2 26.1"/> <path d="M50 50 L26.1 9.2"/> <path d="M50 50 L62.4 5.6"/> <path d="M50 50 L82.3 17.7"/> <path d="M50 50 L94.4 37.6"/> <path d="M50 50 L94.4 62.4"/> <path d="M50 50 L82.3 82.3"/> <path d="M50 50 L62.4 94.4"/> <path d="M50 50 L37.6 94.4"/> <path d="M50 50 L17.7 82.3"/> <path d="M50 50 L5.6 62.4"/> <path d="M50 50 L5.6 37.6"/> <path d="M50 50 L17.7 17.7"/> <path d="M50 50 L37.6 5.6"/>
+        </g>
+    </svg>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="img/lololo.png" alt="Ganga Gurukulam Logo" class="logo">
+            <span class="header-title">GANGA GURUKULAM CAREER ACADEMY</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-content">
+        <!-- Part 1: Welcome Screen -->
+        <div id="welcome-screen" class="absolute inset-0 flex flex-col items-center justify-center text-center transition-opacity duration-1000 ease-in-out opacity-100 bg-black bg-opacity-40 backdrop-blur-sm">
+            <div class="p-4">
+                <h1 class="welcome-heading text-5xl md:text-7xl lg:text-8xl">HAPPY INDEPENDENCE DAY</h1>
+                <p class="mt-4 text-xl md:text-2xl text-white" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">from</p>
+                <p class="academy-name mt-1 text-3xl md:text-4xl tracking-widest">GANGA GURUKULAM CAREER ACADEMY</p>
+            </div>
+        </div>
+
+        <!-- Part 2: Social Media Links -->
+        <div id="social-links" class="absolute inset-0 flex flex-col items-center justify-center text-center transition-opacity duration-1000 ease-in-out opacity-0 hidden">
+            <div class="bg-gray-200 bg-opacity-90 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-8">Join Us On Social Media</h2>
+                <div class="flex justify-center flex-wrap gap-6 md:gap-10 icon-container">
+                    <a href="https://www.facebook.com/share/1FRuqCdKSX/" target="_blank" class="social-link text-gray-700 hover:text-[#1877F2]" style="animation-delay: 0.2s;"><i class="fab fa-facebook fa-3x"></i></a>
+                    <a href="#" target="_blank" class="social-link text-gray-700 hover:text-[#1DA1F2]" style="animation-delay: 0.4s;"><i class="fab fa-twitter fa-3x"></i></a>
+                    <a href="https://www.instagram.com/gangagurukulamofficial?igsh=MXV3eDlqYjg3NzIzbQ==" target="_blank" class="social-link text-gray-700 hover:text-[#E4405F]" style="animation-delay: 0.6s;"><i class="fab fa-instagram fa-3x"></i></a>
+                    <a href="https://youtube.com/@gangagurukulamofficial?si=docNLuCrgU_VYpsI" target="_blank" class="social-link text-gray-700 hover:text-[#FF0000]" style="animation-delay: 0.8s;"><i class="fab fa-youtube fa-3x"></i></a>
+                    <a href="https://t.me/gangagurukulam" target="_blank" class="social-link text-gray-700 hover:text-[#0088cc]" style="animation-delay: 1.0s;"><i class="fab fa-telegram fa-3x"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VayzsIHKbYMOSOW9xt1i" target="_blank" class="social-link text-gray-700 hover:text-[#25D366]" style="animation-delay: 1.2s;"><i class="fab fa-whatsapp fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 Ganga Gurukulam Career Academy. All rights reserved.
+    </footer>
+
+    <script>
+        // JavaScript to handle the transition between screens
+        window.addEventListener('load', () => {
+            const welcomeScreen = document.getElementById('welcome-screen');
+            const socialLinks = document.getElementById('social-links');
+
+            setTimeout(() => {
+                welcomeScreen.classList.remove('opacity-100');
+                welcomeScreen.classList.add('opacity-0');
+
+                setTimeout(() => {
+                    welcomeScreen.style.display = 'none';
+                    socialLinks.classList.remove('hidden');
+                    setTimeout(() => {
+                        socialLinks.classList.remove('opacity-0');
+                        socialLinks.classList.add('opacity-100');
+                    }, 50);
+                }, 1000);
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
